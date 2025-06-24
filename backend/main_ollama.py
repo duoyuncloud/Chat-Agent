@@ -1,3 +1,7 @@
+# main_ollama.py
+# 本文件为 Ollama 本地大模型后端，适用于本地推理、隐私保护等场景。
+# 支持 llama2:latest 等本地模型，无需 API Key。
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
@@ -51,4 +55,4 @@ async def chat_endpoint(request: ChatRequest):
             if not reply:
                 reply = "No response from model."
             print("Final reply:", reply)
-            return ChatResponse(response=reply)
+            return ChatResponse(response=reply) 

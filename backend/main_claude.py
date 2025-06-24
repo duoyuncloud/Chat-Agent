@@ -1,3 +1,7 @@
+# main_claude.py
+# 本文件为 Claude4（Claude 3 Opus）云端大模型后端，适用于高质量云端推理、复杂任务等场景。
+# 需要用户输入 Claude API Key（sk-ant-...）。
+
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
@@ -66,4 +70,4 @@ async def chat_endpoint(request: ChatRequest):
             return ChatResponse(response=reply)
     except Exception as e:
         logger.error(f"Exception in Claude chat: {e}")
-        return ChatResponse(response=f"Internal error: {e}") 
+        return ChatResponse(response=f"❌ Internal error: {e}") 

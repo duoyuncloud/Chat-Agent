@@ -17,7 +17,7 @@ cd backend
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
-uvicorn main:app --reload
+uvicorn main_ollama:app --reload
 ```
 
 ### Claude4 版本
@@ -47,6 +47,8 @@ streamlit run chat_streamlit.py
 
 ## LLM 选择与 API Key
 - 前端支持 LLM 选择（Ollama/Claude4）。
+- **Ollama**：本地大模型，支持 llama2:latest 等，免API Key，适合本地推理和隐私场景。
+- **Claude4**：Anthropic Claude 4（目前用 Claude 3 Opus 作为占位），需要API Key，适合高质量云端推理。
 - 选择 Claude4 时，需在前端输入 Claude API Key（sk-ant-...）。
 - Ollama 版本无需 API Key。
 - 每个模型下方有简要介绍，帮助用户理解各自特点和适用场景。
@@ -64,8 +66,8 @@ streamlit run chat_streamlit.py
 
 ## 目录结构 (Project Structure)
 
-- backend/main.py —— Ollama 后端
-- backend/main_claude.py —— Claude4 后端
+- backend/main_ollama.py —— Ollama 本地后端
+- backend/main_claude.py —— Claude4 云端后端
 - frontend/chat_streamlit.py —— Streamlit 前端
 - requirements.txt —— 后端与前端依赖
 
