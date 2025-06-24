@@ -1,11 +1,11 @@
 # chat-agent
 
-A full-stack project with a FastAPI backend and a Streamlit frontend for model conversion and chat.
+A full-stack project with a FastAPI backend and a Streamlit frontend for chat.
 
 ---
 
 ## 项目简介
-chat-agent 是一个包含 FastAPI 后端和 Streamlit 前端的全栈项目，支持模型转换和聊天功能。
+chat-agent 是一个包含 FastAPI 后端和 Streamlit 前端的全栈项目，支持聊天功能。
 
 ---
 
