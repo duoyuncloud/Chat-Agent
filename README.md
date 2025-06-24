@@ -1,19 +1,11 @@
 # chat-agent
 
-<<<<<<< HEAD
-A full-stack project with a FastAPI backend and a Streamlit frontend for chat.
-=======
 A full-stack project with a FastAPI backend and a Streamlit frontend for model conversion and chat.
->>>>>>> 80eb6f8 (refactor: clean up frontend, improve Streamlit UI, update docs)
 
 ---
 
 ## 项目简介
-<<<<<<< HEAD
-chat-agent 是一个包含 FastAPI 后端和 Streamlit 前端的全栈项目，支持聊天功能。
-=======
 chat-agent 是一个包含 FastAPI 后端和 Streamlit 前端的全栈项目，支持模型转换和多模型聊天功能。
->>>>>>> 80eb6f8 (refactor: clean up frontend, improve Streamlit UI, update docs)
 
 ---
 
@@ -72,10 +64,6 @@ streamlit run chat_streamlit.py
 
 ## 目录结构 (Project Structure)
 
-<<<<<<< HEAD
-- backend/  —— FastAPI 后端
-- frontend/ —— React/Streamlit 前端 
-=======
 - backend/main.py —— Ollama 后端
 - backend/main_claude.py —— Claude4 后端
 - frontend/chat_streamlit.py —— Streamlit 前端
@@ -94,5 +82,4 @@ pip install -r backend/requirements.txt
 ## 其他说明
 - CORS 设置为全开放，生产环境建议限制来源。
 - 如需支持更多 LLM，只需在前端 LLM_OPTIONS 中扩展，并在后端增加新接口。
-- Claude4 实际为 Claude 3 Opus 占位，后续可直接升级。 
->>>>>>> 80eb6f8 (refactor: clean up frontend, improve Streamlit UI, update docs)
+- Claude4 实际为 Claude 3 Opus 占位，后续可直接升级。
